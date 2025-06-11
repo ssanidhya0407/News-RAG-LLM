@@ -1,0 +1,36 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# MacOS
+.DS_Store
+
+# VSCode & PyCharm
+.vscode/
+.idea/
+
+# Data & embeddings
+data/
+embeddings/
+
+# Streamlit cache
+.streamlit/
+
+# Ollama cache
+.ollama/
+
+# Model files (if any)
+*.bin
+*.pth
+*.h5
+*.ckpt
