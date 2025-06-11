@@ -1,6 +1,17 @@
-import streamlit as st
+import os
+
+# Download embeddings if missing or zero-byte
+if (
+    not os.path.exists("embeddings/news_embeddings.npy")
+    or not os.path.exists("embeddings/news_df.json")
+    or os.path.getsize("embeddings/news_embeddings.npy") == 0
+    or os.path.getsize("embeddings/news_df.json") == 0
+):
+    import download_embeddings
+
 from retriever import retrieve_articles
 from generator import generate_with_ollama
+import streamlit as st
 
 st.set_page_config(page_title="News RAG Assistant", layout="wide")
 
