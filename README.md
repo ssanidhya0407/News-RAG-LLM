@@ -1,5 +1,11 @@
 # 📰 News RAG Assistant (Local LLM Demo)
 
+
+[![Streamlit App](https://img.shields.io/badge/Streamlit-Live%20Demo-brightgreen?logo=streamlit)](https://newsviallm.streamlit.app)
+
+Try the app here: [https://newsviallm.streamlit.app](https://newsviallm.streamlit.app)
+
+
 This project demonstrates a fully local **Retrieval-Augmented Generation (RAG)** pipeline, powered by a news dataset, semantic search, and a local Llama 3 model running via [Ollama](https://ollama.com/). The app answers news-related questions using only your own computer—**no cloud APIs or third-party data processing**.
 
 ---
