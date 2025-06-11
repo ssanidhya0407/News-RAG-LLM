@@ -14,8 +14,8 @@ def download_file(url, dest_path):
 
 os.makedirs("embeddings", exist_ok=True)
 
-EMBEDDINGS_URL = "https://huggingface.co/ssanidhya0407/newsviallm-embeddings/resolve/main/news_embeddings.npy"
-DF_URL = "https://huggingface.co/ssanidhya0407/newsviallm-embeddings/resolve/main/news_df.json"
+EMBEDDINGS_URL = "https://huggingface.co/datasets/ssanidhya0407/newsviallm-embeddings/resolve/main/news_embeddings.npy"
+DF_URL = "https://huggingface.co/datasets/ssanidhya0407/newsviallm-embeddings/resolve/main/news_df.json"
 
 download_file(EMBEDDINGS_URL, "embeddings/news_embeddings.npy")
 download_file(DF_URL, "embeddings/news_df.json")
