@@ -9,6 +9,10 @@ df = pd.read_json("embeddings/news_df.json", lines=True)
 # Load embeddings
 embeddings = np.load("embeddings/news_embeddings.npy")
 
+import os
+if not (os.path.exists("embeddings/news_embeddings.npy") and os.path.exists("embeddings/news_df.json")):
+    import download_embeddings
+
 # Build FAISS index
 index = faiss.IndexFlatL2(embeddings.shape[1])
 index.add(embeddings)
