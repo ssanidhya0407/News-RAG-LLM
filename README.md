@@ -18,8 +18,8 @@ This project demonstrates a fully local **Retrieval-Augmented Generation (RAG)**
 ### 1. Clone & Install Dependencies
 
 ```bash
-git clone https://github.com/<YOUR-USERNAME>/<YOUR-REPO>.git
-cd <YOUR-REPO>
+git clone (https://github.com/ssanidhya0407/News-RAG-LLM)
+cd [News-RAG-LLM]
 pip install -r requirements.txt
 ```
 
