@@ -93,7 +93,7 @@ The app will open in your browser.
 
 ---
 
-## 🙏 Credits
+## 🤝 Credits
 
 - [Ollama](https://ollama.com/)
 - [Sentence-Transformers](https://www.sbert.net/)
