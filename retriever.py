@@ -23,8 +23,21 @@ index.add(embeddings)
 model = SentenceTransformer("all-MiniLM-L6-v2")
 
 def retrieve_articles(query, top_k=5):
-    """
-    Given a query string, return top_k most relevant articles as a DataFrame.
+    """Retrieves the top_k most relevant articles for a given query.
+
+    This function uses a FAISS index for efficient similarity search. It
+    encodes the query, searches the index, and returns the corresponding
+    articles from the pre-loaded DataFrame.
+
+    Args:
+        query (str): The user's query string.
+        top_k (int, optional): The number of articles to retrieve.
+            Defaults to 5.
+
+    Returns:
+        pd.DataFrame: A DataFrame containing the top_k most relevant
+            articles, with an added 'distance' column indicating
+            similarity.
     """
     query_emb = model.encode([query])
     distances, indices = index.search(np.array(query_emb), top_k)
